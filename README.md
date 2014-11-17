@@ -1,4 +1,0 @@
-numenite
-========
-
-Monster Collection
