@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+    "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      {% block xmlns -%}
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      {%- endblock %}>
+  
+  {% import "macros/html" as html -%}
+  {% import "macros/crumbs" as breadcrumbs with context -%}
+  
+  <head>
+    {% block head %}
+    
+      {% block meta %}
+        <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+      {% endblock %}
+      
+      <title>
+        {% block title_prefix -%}
+          {% if 'wiki-name' in config %}{{ config['wiki-name']|e }} » {% endif %}
+        {%- endblock %}
+        {% block title -%}
+          {{ title }}
+        {%- endblock %}
+      </title>
+      
+      {% block css %}
+        <!-- YUI CSS reset, fonts, base -->
+        {{ html.cssimport(("http://yui.yahooapis.com/combo?" +
+                           "3.0.0/build/cssreset/reset-min.css&" +
+                           "3.0.0/build/cssfonts/fonts-min.css&" +
+                           "3.0.0/build/cssbase/base-min.css") | e) }}
+        
+        {{ html.cssimport(make_relative("/media/css/style.css")) }}
+        {{ html.cssimport(make_relative("/media/css/pygments.css")) }}
+      {% endblock %}
+      
+      {% block js %}{% endblock %}
+      
+      {% block analytics %}
+        {% if 'google-analytics' in config %}
+          <!-- Google Analytics -->
+          <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', '{{ config['google-analytics'] }}']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+            })();
+          </script>
+        {% endif %}
+      {% endblock analytics %}
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+<meta name="apple-mobile-web-app-title" content="Numenite">
+<link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#5bfa67">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="application-name" content="Numenite">
+    {% endblock head %}
+  </head>
+  
+  <body {% block body_attrs %}{% endblock %}>
+    {% block body %}
+      
+      {% block body_header %}
+        {% block crumbs %}
+          {{ breadcrumbs.crumbs(crumbs) }}
+        {% endblock crumbs %}
+      {% endblock body_header %}
+      
+      <div id="content">
+        {% block content_header %}
+        {% endblock content_header %}
+        
+        {% block content %}
+        {% endblock content %}
+        
+        {% block content_footer %}
+        {% endblock content_footer %}
+        
+        <hr class="clear" />
+      </div> <!-- div#content -->
+      
+      {% block body_footer %}
+      <div id="footer">
+        <p>
+          {% if 'wiki-name' in config %}
+            {{ config['wiki-name']|e }} —
+          {% endif %}
+          Powered by <a href="http://markdoc.org/">Markdoc</a>.
+        </p>
+      </div>
+      {% endblock body_footer %}
+    
+    {% endblock body %}
+    
+    <hr class="clear" />
+  </body>
+</html>
