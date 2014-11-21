@@ -1,2 +1,5 @@
 wiki-name: "Numenite"
 html-dir: "numenite"
+static-dir: "static"
+use-default-static: false
+use-default-template: false
