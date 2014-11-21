@@ -182,12 +182,18 @@ float: left;
 margin: 5px;
 }
 
+.firstpic {
+max-width: 70%;
+margin-left: 15%;
+margin-right: 15%;
+}
+
 table {
 float: right;
 margin: 5px;
 }
 
-.firstpic {
-max-width: 200px;
-margin-top: 15px;
+thead {
+background: #222222;
+color: #DDDDDD;
 }
