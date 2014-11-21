@@ -1,5 +1,5 @@
 html {
-  background-color: #f6f6f6; }
+  background-color: #c2e6c1; }
 
 body {
   background-color: white;
@@ -13,7 +13,7 @@ body {
     padding: 0 20px;
     width: 610px; }
   body #breadcrumbs {
-    border-bottom: 2px solid #f6f6f6;
+    border-bottom: 2px solid ##c2e6c1;
     height: 28px;
     margin: 0;
     padding: 0;
@@ -33,7 +33,7 @@ body {
         content: "»";
         float: right; }
   body #footer {
-    border-top: 8px solid #f6f6f6;
+    border-top: 8px solid ##c2e6c1;
     padding-top: 13px; }
   body .clear {
     clear: both;
@@ -47,7 +47,7 @@ body.listing table#pages tr, body.listing table#subdirs tr, body.listing table#f
 body.listing table#pages td, body.listing table#subdirs td, body.listing table#files td {
   border: none; }
   body.listing table#pages td.size, body.listing table#subdirs td.size, body.listing table#files td.size {
-    background-color: #f6f6f6; }
+    background-color: #c2e6c1; }
   body.listing table#pages td.name, body.listing table#subdirs td.name, body.listing table#files td.name {
     padding: 0; }
     body.listing table#pages td.name a, body.listing table#subdirs td.name a, body.listing table#files td.name a {
@@ -56,7 +56,7 @@ body.listing table#pages td, body.listing table#subdirs td, body.listing table#f
       padding: 4px 8px; }
 
 blockquote {
-  background-color: #f6f6f6;
+  background-color: #c2e6c1;
   padding: 13px;
   padding-bottom: 1px; }
 
@@ -102,7 +102,7 @@ pre {
     border: none;
     padding: 3px 5px 0 5px; }
     .codehilitetable tr td.linenos {
-      background-color: #f6f6f6;
+      background-color: #c2e6c1;
       border-right: 1px solid gray;
       margin: 0;
       padding-right: 6px;
@@ -158,10 +158,10 @@ h4, h5, h6 {
   font-size: 13px; }
 
 a {
-  color: #990000;
+  color: #009900;
   text-decoration: none; }
   a:hover {
-    color: #4c0000; }
+    color: #004c00; }
   a[href^="http:"] {
     text-decoration: underline; }
 
@@ -176,3 +176,13 @@ pre {
   font-family: Menlo, 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, 'Courier 10 Pitch', 'Courier New', monospace;
   font-size: 11px;
   line-height: 18px; }
+
+img {
+float: left;
+margin: 5px;
+}
+
+table {
+float: right;
+margin: 5px;
+}
