@@ -13,7 +13,7 @@ body {
     padding: 0 20px;
     width: 610px; }
   body #breadcrumbs {
-    border-bottom: 2px solid ##dbf5ab;
+    border-bottom: 2px solid #dbf5ab;
     height: 28px;
     margin: 0;
     padding: 0;
@@ -33,7 +33,7 @@ body {
         content: "»";
         float: right; }
   body #footer {
-    border-top: 8px solid ##dbf5ab;
+    border-top: 8px solid #dbf5ab;
     padding-top: 13px; }
   body .clear {
     clear: both;
@@ -158,10 +158,10 @@ h4, h5, h6 {
   font-size: 13px; }
 
 a {
-  color: #009900;
+  color: #3B9E89;
   text-decoration: none; }
   a:hover {
-    color: #004c00; }
+    color: #5AF0D0; }
   a[href^="http:"] {
     text-decoration: underline; }
 
