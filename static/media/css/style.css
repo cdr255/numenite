@@ -1,5 +1,5 @@
 html {
-  background-color: #d8fe91; }
+  background-color: #dbf5ab; }
 
 body {
   background-color: white;
@@ -13,7 +13,7 @@ body {
     padding: 0 20px;
     width: 610px; }
   body #breadcrumbs {
-    border-bottom: 2px solid ##d8fe91;
+    border-bottom: 2px solid ##dbf5ab;
     height: 28px;
     margin: 0;
     padding: 0;
@@ -33,7 +33,7 @@ body {
         content: "»";
         float: right; }
   body #footer {
-    border-top: 8px solid ##d8fe91;
+    border-top: 8px solid ##dbf5ab;
     padding-top: 13px; }
   body .clear {
     clear: both;
@@ -47,7 +47,7 @@ body.listing table#pages tr, body.listing table#subdirs tr, body.listing table#f
 body.listing table#pages td, body.listing table#subdirs td, body.listing table#files td {
   border: none; }
   body.listing table#pages td.size, body.listing table#subdirs td.size, body.listing table#files td.size {
-    background-color: #d8fe91; }
+    background-color: #dbf5ab; }
   body.listing table#pages td.name, body.listing table#subdirs td.name, body.listing table#files td.name {
     padding: 0; }
     body.listing table#pages td.name a, body.listing table#subdirs td.name a, body.listing table#files td.name a {
@@ -56,7 +56,7 @@ body.listing table#pages td, body.listing table#subdirs td, body.listing table#f
       padding: 4px 8px; }
 
 blockquote {
-  background-color: #d8fe91;
+  background-color: #dbf5ab;
   padding: 13px;
   padding-bottom: 1px; }
 
@@ -102,7 +102,7 @@ pre {
     border: none;
     padding: 3px 5px 0 5px; }
     .codehilitetable tr td.linenos {
-      background-color: #d8fe91;
+      background-color: #dbf5ab;
       border-right: 1px solid gray;
       margin: 0;
       padding-right: 6px;
