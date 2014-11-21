@@ -1,5 +1,5 @@
 wiki-name: "Numenite"
-html-dir: "numenite"
+html-dir: "/home/chrissofer/Dropbox/wiki/numenite-rel"
 static-dir: "static"
 use-default-static: false
 use-default-template: false

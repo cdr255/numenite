@@ -6,3 +6,5 @@ standing still, to be regimented and orderly, and to refrain from
 acting. When they are Good, they are pillars of strength, beacons of
 order, and clearheaded. When they are Bad, they are dismissive,
 pedantic, and beaurecratic.
+
+* [Guantia](/creatures/temperance/guantia.html)
