@@ -1,8 +1,14 @@
 # Guantia #
 
-![A picture of Guantia](#)
+[![A picture of Guantia](https://s3.amazonaws.com/numenite/no-pic-s.png){.firstpic}](https://s3.amazonaws.com/numenite/no-pic.png)
 
 <table>
+  <thead>
+    <tr>
+	  <th colspan="4"> Info Card </th>
+	</tr>
+  </thead>
+  <tbody>	
   <tr>
   
     <th><a href="../names.html" title="What we call this type of Creature.">Name:</a></th>
@@ -35,9 +41,11 @@
 	<th><a href="../stress.html" title="How hard it is to maintain this creature's existence">Stress:</a></th>
 	<td>1.0</td>
   </tr>
+  </tbody>
 </table>
 
-## Biology ##
+
+## Biology ## {style="clear: both;"}
 
 __Guantia__ is a marsupial, quadrupedal creature with primarily grey
 fur. Its nose, hands, and feet are darkly colored. It has short,
