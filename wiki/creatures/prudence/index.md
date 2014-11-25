@@ -1,7 +1,10 @@
-# Justice #
+# Prudence #
 
-Justice manifests itself through [Numenite](/creatures/numenite) into
-creatures of a fair nature. They are apt to be sitting, to be voluble
-and honest, and to act in the way they deem most fair. When they are
-Good, they are honorable, equitable, and open-minded. When they are
-Bad, they are calculating, argumentative, and dubious.
+Prudence manifests itself through [Numenite](/creatures/numenite) into
+creatures of a reflective nature. They are apt to be lounging, to be
+introspective and inquisitive, and to react to situations after
+forethought. When they are Good, they are respectful, thoughtful, and
+empathetic. When they are Bad, they are two-faced, judgemental, and
+elitest.
+
+* [Guandent](/creatures/prudence/guandent.html)
